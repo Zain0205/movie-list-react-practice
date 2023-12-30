@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger > span:nth-child(1) {
+  @apply rotate-45
+}
+
+.hamburger > span:nth-child(2) {
+  @apply scale-0
+}
+
+.hamburger > span:nth-child(3) {
+  @apply -rotate-45
+}
+
+.card {
+  border: 5px solid #1a163f;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #2a264f;
+}
+
+.card .title {
+ 
+  box-shadow: 0 -95px 28px -25px #000 inset;
+}
+
+
+.card .catagory {
+  background: #2a264f;
+  transform: translate(-160px, 0);
+}
+
+.card .views {
+  background: #8b2463;
+  transform: translate(-160px, 0);
+}
+
+.card:hover .img1 {
+  transform: rotate(10deg) scale(1.3) translate(20px, 0);
+  transform-origin: 300px 300px;
+  opacity: 0.5;
+}
+
+.card:hover .img2 {
+  transform: rotate(90deg) translate(0px, 150px);
+  transform-origin: -20px 200px;
+}
+
+.card:hover .text {
+  opacity: 0.8;
+  transform: rotate(0deg);
+}
+
+.card:hover .views,
+.card:hover .catagory {
+  transform: translate(0);
+}
+
+.card:hover .title {
+  transform: scale(0);
+}
